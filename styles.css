@@ -1,0 +1,48 @@
+:root {
+    --primary-text: #00fa12;
+    --rocket-bottom: 42px;
+}
+
+.grass {
+    background-color: green;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+}
+
+.rocket {
+    animation: rocket 8s ease-in-out;
+    bottom: var(--rocket-bottom);
+    font-size: 50px;
+    left: 30%;
+    position: fixed;
+    transform: rotateZ(-45deg);
+}
+
+.sun {
+    position: fixed;
+    top: 40px;
+    right: 40px;
+    border: 4px dashed orangered;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    background-color: gold;
+}
+
+
+@keyframes rocket {
+    0% {
+        bottom: var(--rocket-bottom);
+    }
+
+    50% {
+        bottom: 100%;
+    }
+
+    100% {
+        bottom: var(--rocket-bottom);
+    }
+}
